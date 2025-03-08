@@ -1,35 +1,76 @@
-It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company). Your first major task is to do a research project about people whom the company employed during the 1980s and 1990s. All that remains of the employee database from that period are six CSV files.
+# Pewlett Hackard Employee Database Analysis - SQL Challenge
 
-For this project, you’ll design the tables to hold the data from the CSV files, import the CSV files into a SQL database, and then answer questions about the data. That is, you’ll perform data modeling, data engineering, and data analysis, respectively.
+## Overview
+
+This challenge involves designing tables, importing CSV data into a SQL database, and analyzing the employee data from Pewlett Hackard, a fictional company, during the 1980s and 1990s. The goal is to perform data modeling, data engineering, and data analysis to answer specific questions about the employee data.
+
+### 1. Data Modeling
+
+- **Inspect CSV Files**: Review the provided CSV files containing employee data.
+- **Entity Relationship Diagram (ERD)**: Sketch an ERD of the tables using tools like QuickDBD to visualize relationships.
+
+### 2. Data Engineering
+
+- **Table Schema**: Create a table schema for each CSV file, specifying data types, primary keys, foreign keys, and other constraints.
+- **Table Creation Order**: Ensure tables are created in the correct order to handle foreign keys effectively.
+- **CSV Data Import**: Import each CSV file into its corresponding SQL table, accounting for headers to avoid errors.
+
+### 3. Data Analysis
+
+Answer the following questions using SQL queries:
+1. List the employee number, last name, first name, sex, and salary of each employee.
+2. List the first name, last name, and hire date for employees hired in 1986.
+3. List the manager of each department along with their department number, department name, employee number, last name, and first name.
+4. List the department number for each employee along with their employee number, last name, first name, and department name.
+5. List the first name, last name, and sex of each employee named Hercules with a last name starting with "B".
+6. List each employee in the Sales department, including their employee number, last name, and first name.
+7. List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
+8. List the frequency counts of all employee last names in descending order.
+
+## Instructions
+
+### Before You Begin
+
+1. **Create a New Repository**:
+   - Create a new repository for this challenge called `sql-challenge`.
+   - Clone the new repository to your computer.
+   - Create a directory for this challenge (e.g., `EmployeeSQL`).
+
+2. **Download Files**:
+   - Download the files from the provided link to get started: [Module 9 Challenge files](https://some-external-link.com)
+
+### Data Modeling
+
+1. **Inspect CSV Files**:
+   - Review the structure and content of the provided CSV files.
+
+2. **Sketch ERD**:
+   - Use tools like QuickDBD to create an ERD that visualizes the relationships between the tables.
+![Tables](https://github.com/user-attachments/assets/f843731f-84e5-42a5-b0c7-92c8c72bc1b9)
+
+### Data Engineering
+
+1. **Create Table Schema**:
+   - Define the schema for each table, including data types, primary keys, foreign keys, and constraints.
+
+2. **Create Tables**:
+   - Ensure tables are created in the correct order to handle foreign keys.
+
+3. **Import CSV Data**:
+   - Import each CSV file into its corresponding SQL table.
+   - Remember to account for headers to avoid import errors.
+
+### Data Analysis
+
+1. **Query Data**:
+   - Use SQL queries to answer the specified questions about the employee data.
+
+## Conclusion
+
+This challenge provided valuable experience in data modeling, data engineering, and data analysis using SQL. By designing table schemas, importing data, and performing complex queries, we gained insights into the employee data of Pewlett Hackard during the 1980s and 1990s.
 
 
-Data Modeling
-Inspect the CSV files, and then sketch an Entity Relationship Diagram of the tables. To create the sketch, feel free to use a tool like QuickDBDLinks to an external site..
 
-Data Engineering
-Use the provided information to create a table schema for each of the six CSV files. Be sure to do the following:
+---
 
-Remember to specify the data types, primary keys, foreign keys, and other constraints.
 
-For the primary keys, verify that the column is unique. Otherwise, create a composite keyLinks to an external site., which takes two primary keys to uniquely identify a row.
-
-Be sure to create the tables in the correct order to handle the foreign keys.
-
-Import each CSV file into its corresponding SQL table.
-
-Data Analysis
-List the employee number, last name, first name, sex, and salary of each employee.
-
-List the first name, last name, and hire date for the employees who were hired in 1986.
-
-List the manager of each department along with their department number, department name, employee number, last name, and first name.
-
-List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
-
-List first name, last name, and sex of each employee whose first name is Hercules and whose last name begins with the letter B.
-
-List each employee in the Sales department, including their employee number, last name, and first name.
-
-List each employee in the Sales and Development departments, including their employee number, last name, first name, and department name.
-
-List the frequency counts, in descending order, of all the employee last names (that is, how many employees share each last name).
